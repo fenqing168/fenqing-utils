@@ -109,7 +109,6 @@ public class AiKuReptileSite extends AiKuReptile {
         Pattern pattern = Pattern.compile("<li class=affix-item>[\\s\\S]+?</a>\n</li>");
         Matcher matcher = pattern.matcher(rootSrc);
         while(matcher.find()){
-
             typeLiSrcs.add(matcher.group());
         }
         return typeLiSrcs;
